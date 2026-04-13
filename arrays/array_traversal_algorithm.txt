@@ -1,0 +1,8 @@
+Step 1: Start
+Step 2: Read number of elements n
+Step 3: Input array elements
+Step 4: Set i = 0
+Step 5: Repeat while i < n
+            Print arr[i]
+            Increment i
+Step 6: Stop
