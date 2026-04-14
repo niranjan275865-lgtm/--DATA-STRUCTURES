@@ -1,0 +1,13 @@
+A Singly Linked List is a collection of nodes where each node contains:
+1. Data
+2. A pointer to the next node
+
+Structure in C:
+
+struct Node {
+    int data;
+    struct Node *next;
+};
+
+Representation:
+[Data | Next] -> [Data | Next] -> NULL
