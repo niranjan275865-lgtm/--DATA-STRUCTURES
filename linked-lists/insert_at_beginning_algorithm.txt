@@ -1,0 +1,6 @@
+Step 1: Start
+Step 2: Create a new node.
+Step 3: Enter the data.
+Step 4: Set new->next = head.
+Step 5: Update head = new.
+Step 6: Stop.
