@@ -1,0 +1,6 @@
+Step 1: Start
+Step 2: Check if head is NULL. If yes, list is empty.
+Step 3: Store head in a temporary node.
+Step 4: Update head = head->next.
+Step 5: Free the temporary node.
+Step 6: Stop.
