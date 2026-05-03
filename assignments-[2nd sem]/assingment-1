@@ -1,0 +1,353 @@
+## **Question 1:**
+
+Define data structure and explain types. Discuss time and space complexity with examples. Compare best, worst, and average cases for common operations on arrays and linked lists.
+
+### **Answer:**
+
+### **Definition of Data Structure:**
+
+A data structure is a way of organizing data in memory to enable efficient processing, storage, and retrieval. It is the logical and mathematical organization of data.
+
+---
+
+### **Types of Data Structure:**
+
+#### **1. Primitive Data Structure:**
+
+Basic data types:
+
+* int
+* float
+* char
+* boolean
+
+---
+
+#### **2. Non-Primitive Data Structure:**
+
+**a) Linear Data Structure:**
+Elements are arranged sequentially.
+Examples:
+
+* Array
+* Linked List
+* Stack
+* Queue
+
+---
+
+**b) Non-Linear Data Structure:**
+Elements are arranged hierarchically.
+Examples:
+
+* Tree
+* Graph
+
+---
+
+### **Time Complexity:**
+
+Time complexity measures the time taken by an algorithm based on input size.
+
+Examples:
+
+* Linear Search → O(n)
+* Binary Search → O(log n)
+
+---
+
+### **Space Complexity:**
+
+Space complexity is the memory used by an algorithm.
+
+Examples:
+
+* Linear Search → O(1)
+* Array of size n → O(n)
+
+---
+
+### **Best, Worst, and Average Case:**
+
+* **Best Case:** Minimum time
+  Example: Linear search finds element at first position → O(1)
+
+* **Worst Case:** Maximum time
+  Example: Element at last position → O(n)
+
+* **Average Case:** Normal case
+  Example: Element in middle → O(n)
+
+---
+
+### **Comparison (Array vs Linked List Operations):**
+
+| Operation | Array | Linked List |
+| --------- | ----- | ----------- |
+| Access    | O(1)  | O(n)        |
+| Search    | O(n)  | O(n)        |
+| Insertion | O(n)  | Efficient   |
+| Deletion  | O(n)  | Efficient   |
+
+---
+
+---
+
+## **Question 2:**
+
+Explain array in detail with its representation in memory. Derive address calculation formulas for 1D and 2D arrays and discuss different applications of arrays in real-world problems.
+
+### **Answer:**
+
+### **Definition of Array:**
+
+An array is a linear data structure that stores a collection of elements of the same data type in contiguous memory locations.
+
+---
+
+### **Features of Array:**
+
+* Fixed size
+* Same data type elements
+* Indexed access (0,1,2,...)
+
+---
+
+### **Representation in Memory:**
+
+Array elements are stored in continuous memory locations.
+Each element has:
+
+* Index
+* Value
+* Address
+
+---
+
+### **Address Calculation (1D Array):**
+
+Address = Base Address + (Index × Size of element)
+
+---
+
+### **Address Calculation (2D Array):**
+
+Address = Base Address + [(Row × number of columns) + Column] × Size
+
+---
+
+### **Applications of Array:**
+
+* Storing marks or salary
+* Searching elements
+* Sorting data
+* Matrix operations
+* Implementing stack and queue
+* Image processing
+* Database records
+
+---
+
+---
+
+## **Question 3:**
+
+Define sparse matrix and explain its representations. Compare sparse matrix with normal matrix and discuss advantages in terms of space complexity.
+
+### **Answer:**
+
+### **Definition of Sparse Matrix:**
+
+A sparse matrix is a matrix in which most elements are zero and only a few elements are non-zero.
+
+---
+
+### **Representation:**
+
+Instead of storing all elements, only non-zero values are stored as:
+
+(Row, Column, Value)
+
+---
+
+### **Types of Representation:**
+
+* Array representation
+* Linked list representation
+
+---
+
+### **Comparison:**
+
+| Feature    | Normal Matrix     | Sparse Matrix               |
+| ---------- | ----------------- | --------------------------- |
+| Storage    | Stores all values | Stores only non-zero values |
+| Memory     | High usage        | Low usage                   |
+| Efficiency | Low               | High                        |
+
+---
+
+### **Advantages:**
+
+* Saves memory
+* Faster computation
+* Efficient storage
+* Better performance
+
+---
+
+---
+
+## **Question 4:**
+
+What is a linear list? Explain singly linked list with diagram and write algorithms for insertion, deletion, and searching operations.
+
+### **Answer:**
+
+### **Linear List:**
+
+A linear list is a data structure where elements are arranged sequentially.
+
+---
+
+### **Singly Linked List:**
+
+A singly linked list consists of nodes. Each node contains:
+
+* Data
+* Pointer to next node
+
+The last node points to NULL.
+
+---
+
+### **Insertion Algorithm (Beginning):**
+
+* Create new node
+* Set newNode → next = head
+* Update head = newNode
+
+---
+
+### **Deletion Algorithm (Beginning):**
+
+* Store head in temp
+* Move head to next node
+* Delete temp
+
+---
+
+### **Searching Algorithm:**
+
+* Start from head
+* Traverse each node
+* If found → stop
+* Else continue
+
+---
+
+---
+
+## **Question 5:**
+
+Explain circular linked list and its advantages over singly linked list. Write algorithms for creation and traversal, and discuss practical applications.
+
+### **Answer:**
+
+### **Circular Linked List:**
+
+In a circular linked list, the last node points back to the first node instead of NULL.
+
+---
+
+### **Advantages:**
+
+* No NULL pointer
+* Traversal can start anywhere
+* Efficient insertion and deletion
+* Better memory utilization
+
+---
+
+### **Creation Algorithm:**
+
+* Create new node
+* If empty → point to itself
+* Else link last node to new node
+* New node points to head
+
+---
+
+### **Traversal Algorithm:**
+
+* Start from head
+* Print data
+* Continue until reaching head again
+
+---
+
+### **Applications:**
+
+* Round-robin scheduling
+* Continuous data processing
+
+---
+
+---
+
+## **Question 6:**
+
+Describe doubly linked list with structure. Write detailed algorithms for insertion and deletion at different positions. Compare singly, circular, and doubly linked lists.
+
+### **Answer:**
+
+### **Doubly Linked List:**
+
+Each node contains:
+
+* Data
+* Pointer to next node
+* Pointer to previous node
+
+---
+
+### **Insertion (Beginning):**
+
+* Create new node
+* Set next = head
+* Set prev = NULL
+* Update head
+
+---
+
+### **Insertion (End):**
+
+* Traverse to last node
+* Link new node
+* Update previous pointer
+
+---
+
+### **Deletion (Beginning):**
+
+* Move head to next node
+* Set prev = NULL
+* Delete old node
+
+---
+
+### **Deletion (End):**
+
+* Traverse to last node
+* Update previous node
+* Delete last node
+
+---
+
+### **Comparison:**
+
+| Feature    | Singly        | Doubly         | Circular       |
+| ---------- | ------------- | -------------- | -------------- |
+| Pointers   | One           | Two            | One (circular) |
+| Traversal  | One direction | Two directions | Loop traversal |
+| Complexity | Simple        | More complex   | Moderate       |
